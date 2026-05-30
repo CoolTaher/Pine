@@ -1,0 +1,384 @@
+/* ================================
+   Pine Theme – Color Variables
+   ================================ */
+
+:root {
+    /* Core Greens */
+    --pine-evergreen: #132A13;   /* Deep base / headers */
+    --pine-hunter:    #31572c;   /* Primary actions */
+    --pine-fern:      #4f772d;   /* Secondary elements */
+    --pine-palm:      #90a955;   /* Subtle accents */
+    --pine-lime:      #fefae0;   /* Highlights / soft emphasis */
+}
+/* ===============================
+   🌲 GLOBAL APP STYLING
+   =============================== */
+
+html, body, [data-testid="stApp"] {
+    background-color: var(--pine-lime);
+    color: var(--pine-evergreen);
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+[data-testid="stAppScrollToBottomContainer"] {
+    background-color: var(--pine-lime);
+}
+
+hr {
+    border: 2px solid var(--pine-evergreen);
+    border-top: 1px solid var(--border-soft);
+}
+
+
+/* ------------------------------------------ Sidebar Enhancements -------------------------------------- */
+/* ===============================
+   🌲 SIDEBAR
+   =============================== */
+
+/* ================================
+   Pine Sidebar
+   ================================ */
+
+[data-testid="stSidebar"] {
+    background-color: var(--pine-evergreen);
+    color: var(--pine-lime);
+    padding: 1.25rem 1rem;
+    border-right: 1px solid rgba(236, 243, 158, 0.15); /* subtle lime hint */
+    /* Prevent sidebar content from scaling oddly */
+    min-width: 280px;
+    max-width: 340px;
+}
+
+[data-testid="stSidebar"] * {
+    box-sizing: border-box;
+}
+
+/* Sidebar logo image */
+[data-testid="stSidebar"] img {
+    width: 70% !important;
+    max-width: 70% !important;
+    height: auto !important;
+    border-radius: 50% !important;
+    border: 6px solid var(--pine-palm) !important;
+    justify-self: center !important;
+    align-items: center !important;
+    margin: -4rem 0rem 1rem 2.25rem !important;
+}
+
+/* Sidebar Headings */
+[data-testid="stSidebar"] h3 {
+    color: var(--pine-lime);
+    text-align: center;
+    font-weight: 700;
+    margin: -1rem 0rem 0rem 0rem;
+}
+
+/* Sidebar subtitle text */
+[data-testid="stMarkdown"] > div > div > p {
+    color: var(--pine-lime);
+    text-align: center;
+    font-size: 1.15rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1.5px;
+}
+
+/* Divider lines inside sidebar */
+[data-testid="stSidebar"] hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(236, 243, 158, 0.2);
+    margin: 1rem 0;
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    border: 5px solid var(--pine-lime);
+    border-radius: 25px;
+    width: 100%;
+    padding: auto;
+    justify-self: center;
+    align-items:center;
+}
+
+/* File uploader : Dropping Section */
+[data-testid="stFileUploaderDropzone"] {
+    background-color: var(--pine-lime) !important;
+    border: 15px solid var(--pine-evergreen) !important;
+    border-radius: 25px !important;
+    width: 100% !important;
+}
+/* -------------------- File Uploader Box Design -------------------------- */
+
+[data-testid="stFileUploaderDropzoneInstructions"] span {
+    color: var(--pine-evergreen);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Upload Button Container Styling */
+button[data-testid="stBaseButton-secondary"] {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1.5rem;
+    min-height: 2.5rem;
+    margin: 0px 0px 0px 19px;
+    line-height: 1.5rem;
+    text-transform: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--pine-lime);
+    width: auto;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--pine-evergreen);
+    border: 2px solid var(--pine-palm);
+}
+
+/* Choose an image - TEXT*/
+label[data-testid="stWidgetLabel"] [data-testid="stMarkdownContainer"] > p {
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    margin: 1rem 0rem 0rem 2.7rem !important;
+    font-size: 1rem;
+    text-decoration: underline 2.5px var(--pine-lime);
+    color: var(--pine-lime);
+}
+
+/* Upload button - TEXT */
+button[data-testid="stBaseButton-secondary"] [data-testid="stMarkdownContainer"] > p {
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    font-size: 1rem;
+    text-decoration: underline 2.5px var(--pine-lime);
+    color: var(--pine-lime);
+}
+
+
+[data-testid="stFileUploaderDropzoneInput"] {
+    color:var(--pine-evergreen);
+    align-items: center;
+}
+
+
+[data-testid="stSidebar"] > div {
+    overflow-y: auto;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+
+/* Radio group */
+[data-testid="stRadio"] {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--pine-evergreen);
+    border-radius: 12px;
+    border: 5px solid var(--pine-lime);
+}
+
+
+/* Radio labels */
+[data-testid="stRadio"] label {
+    color: var(--pine-lime);
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Selected radio */
+[data-testid="stRadio"] input:checked + div {
+    color: var(--pine-lime);
+    font-weight: 600;
+}
+
+[data-testid="stSidebar"] > div {
+    gap: 1rem;
+}
+
+/* Radio Button Label Header */
+[data-testid="stSidebar"] .stRadio > label[data-testid="stWidgetLabel"] p {
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.02em !important;
+    margin: 0rem 0rem 1rem 1.60rem !important;
+    font-size: 1.1rem;
+    text-decoration: underline 2.5px var(--pine-lime);
+}
+
+/* Radio buttons */
+[role="radiogroup"] p {
+    font-size: 1rem;
+    margin: 0rem 0rem 0.8rem 0rem;
+    color: var(--pine-lime);
+    font-weight: bold;
+}
+
+/* ------------------------------------------ Chat UI -------------------------------------- */
+
+/* ===============================
+   🌲 CHAT UI
+   =============================== */
+
+[data-testid="stHeader"] {
+    background-color: var(--pine-lime);
+}
+
+/* Alert Box : "Upload an image to continue"*/
+[data-testid="stAlert"] {
+    background-color: var(--pine-palm);
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 6px 18px rgba(19, 42, 19, 0.25);
+}
+
+[data-testid="stAlert"] p {
+    color: var(--pine-evergreen) !important;
+    font-weight: 700;
+    margin: 0;
+}
+
+[data-testid="stAlertContainer"] {
+    background-color: var(--pine-palm); /* pine-palm, light */
+}
+
+/* Uploaded Image */
+section[data-testid="stAppScrollToBottomContainer"] div[data-testid="stImageContainer"] img
+ {
+    border-radius: 0.7rem;
+    border: 2px solid var(--pine-palm);
+}
+
+/* Bottom Section */
+
+[data-testid="stBottom"]{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    min-width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+[data-testid="stBottom"] div {
+    background-color: transparent;
+}
+
+[data-baseweb="base-input"] {
+    background-color: var(--pine-evergreen);
+}
+
+[data-testid="stChatInputTextArea"]{
+    font-weight: 600;
+    color: var(--pine-lime);
+    
+}
+/* ------------------------------------------ Image Result UI -------------------------------------- */
+/* Responses Text  */
+section[data-testid="stAppScrollToBottomContainer"]
+  div[data-testid="stMarkdown"]
+  div
+  div[data-testid="stMarkdownContainer"]
+  > p {
+    font-weight: 650;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--pine-evergreen);
+    text-decoration: none;
+}
+
+/* Uploaded Image P Tag */
+
+[data-testid="stCaptionContainer"]
+  > p {
+    /* your styles */
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--pine-evergreen)
+}
+
+/* Question Input Box */
+
+div[data-testid="stChatInput"] > div {
+    border: 2px solid var(--pine-palm);
+    border-radius: 5.25rem;
+    background-color: var(--pine-evergreen);
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 1rem;
+    max-height: 3rem !important;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+
+/* Question Input Box: Subimission button */
+
+button[data-testid="stChatInputSubmitButton"] {
+    border: 1px solid var(--pine-palm);
+    background-color: var(--pine-lime);
+    border-radius: 0.5rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 1;
+    margin: 0px;
+    padding: 0.375rem;
+    width: 2rem;
+    height: 2rem;
+    color: var(--pine-evergreen);
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+/* ------------------------------------------ Footer -------------------------------------- */
+/* ===============================
+   🌲 FOOTER
+   =============================== */
+
+.footer {
+    position: fixed;
+    bottom: 0.75rem;
+    left: 8rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--pine-evergreen);
+    background: transparent;
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* ------------------------------------------ USER_ID -------------------------------------- */
+/* ===============================
+   🌲 USERNAME 
+   =============================== */
+
+section[data-testid="stSidebar"] div[data-testid="stAlert"]
+{
+    background-color: var(--pine-palm) !important;
+    opacity: 0.9 !important;
+    border-radius: 10px !important;
+    width: 50% !important;
+    height: auto !important;
+    margin: -4rem 0rem 4rem 4rem !important;
+}

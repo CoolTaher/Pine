@@ -1,0 +1,13 @@
+transformers==4.49.0
+torch
+torchvision
+accelerate
+Pillow
+timm
+einops
+streamlit
+streamlit-extras
+langchain
+pyvips
+psycopg2-binary
+bcrypt
