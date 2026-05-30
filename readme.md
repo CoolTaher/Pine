@@ -10,11 +10,11 @@ This project demonstrates how Vision Language Models (VLMs) can bridge the gap b
 
 ### Main Interface
 
-![Pine Main Interface](assets/ui-home.jpg)
+![Pine Main Interface](ui-home.jpg)
 
 ### Image Analysis Workspace
 
-![Pine Analysis Workspace](assets/ui-analysis.jpg)
+![Pine Analysis Workspace](ui-analysis.jpg)
 
 ---
 
